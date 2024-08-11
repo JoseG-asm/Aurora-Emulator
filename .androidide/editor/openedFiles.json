@@ -1,7 +1,7 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/aidl/com/project_aurora/emu/ICmdEntryInterface.aidl",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/AuroraApplication.kt",
       "selection": {
         "end": {
           "column": 0,
@@ -16,35 +16,50 @@
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/core/services/XserverLoader.kt",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/ThemeProvider.kt",
       "selection": {
         "end": {
-          "column": 46,
-          "index": 1693,
-          "line": 41
+          "column": 28,
+          "index": 276,
+          "line": 9
         },
         "start": {
-          "column": 46,
-          "index": 1693,
-          "line": 41
+          "column": 8,
+          "index": 256,
+          "line": 9
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/XserverActivity.java",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/res/values/colors.xml",
       "selection": {
         "end": {
-          "column": 45,
-          "index": 9348,
-          "line": 213
+          "column": 33,
+          "index": 378,
+          "line": 8
         },
         "start": {
-          "column": 45,
-          "index": 9348,
-          "line": 213
+          "column": 17,
+          "index": 362,
+          "line": 8
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 26,
+          "index": 1915,
+          "line": 48
+        },
+        "start": {
+          "column": 26,
+          "index": 1915,
+          "line": 48
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/XserverActivity.java"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt"
 }

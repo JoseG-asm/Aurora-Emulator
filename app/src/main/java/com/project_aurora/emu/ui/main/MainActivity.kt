@@ -46,18 +46,11 @@ public class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        ThemeProvider(this).apply {
+            defineStatusBarColor(window)
+        }
         
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        
-        val verifyOs: (Int) -> Unit = { sdk ->
-            if(sdk == Build.VERSION_CODES.P) {
-            finish()
-            }
-        }
-        verifyOs.invoke(Build.VERSION.SDK_INT)
-        
-        val nightModeFlags = this.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
-        defineStatusBarColor.invoke(nightModeFlags)
         
         viewModel.apply {
             extractResources(this@MainActivity, binding)
@@ -67,67 +60,15 @@ public class MainActivity : AppCompatActivity() {
 
         val navController = navHostFragment.navController
         setUpNavigation(navController)
-        showNavigation(true, false)
     }
 
     private fun setUpNavigation(navController: NavController) {
         (binding.bottomNavigation as NavigationBarView).setupWithNavController(navController)
     }
 
-    private fun showNavigation(visible: Boolean, animated: Boolean) {
-        if (!animated) {
-            if (visible) {
-                binding.bottomNavigation.visibility = View.VISIBLE
-            } else {
-                binding.bottomNavigation.visibility = View.INVISIBLE
-            }
-            return
-        }
-
-        binding.bottomNavigation
-            .animate()
-            .apply {
-                if (visible) {
-                    binding.bottomNavigation.visibility = View.VISIBLE
-                    duration = 300
-                    interpolator = PathInterpolator(0.05f, 0.7f, 0.1f, 1f)
-                    if (
-                        ViewCompat.getLayoutDirection(binding.bottomNavigation) ==
-                            ViewCompat.LAYOUT_DIRECTION_LTR
-                    ) {
-                        binding.bottomNavigation.translationX =
-                            binding.bottomNavigation.width.toFloat() * -2
-                        translationX(0f)
-                    } else {
-                        binding.bottomNavigation.translationX =
-                            binding.bottomNavigation.width.toFloat() * 2
-                        translationX(0f)
-                    }
-                }
-            }
-            .withEndAction {
-                if (!visible) {
-                    binding.bottomNavigation.visibility = View.INVISIBLE
-                }
-            }
-            .start()
-    }
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
-    }
-    
-    val defineStatusBarColor: (Int) -> Unit = { flags -> 
-        when(flags) {
-        Configuration.UI_MODE_NIGHT_NO -> { //Light Mode
-        }
-        Configuration.UI_MODE_NIGHT_YES -> { //Night Mode
-          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-          window.statusBarColor = ContextCompat.getColor(this, R.color.aurora_secondary)
-          }
-        }
-        }
     }
 
     fun getClassPath(context: Context): String? {

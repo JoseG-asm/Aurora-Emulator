@@ -54,12 +54,12 @@ public class CmdEntryPoint extends ICmdEntryInterface.Stub {
         handler = new Handler(Looper.getMainLooper());
 
         ctx = createContext();
-        
+
         handler.post(() -> new CmdEntryPoint(args));
         Looper.loop();
     }
 
-    public CmdEntryPoint(String[] args) {
+    CmdEntryPoint(String[] args) {
         if (!start(args))
             System.exit(1);
 

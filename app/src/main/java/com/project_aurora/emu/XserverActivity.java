@@ -16,6 +16,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.view.Display;
 import android.content.BroadcastReceiver;
 import android.content.ClipData;
 import android.content.Context;
@@ -201,8 +202,15 @@ public class XserverActivity extends AppCompatActivity implements View.OnApplyWi
             mInputHandler.handleClientSizeChanged(screenWidth, screenHeight);
             LorieView.sendWindowChange(screenWidth, screenHeight, framerate);
 
-            if (service != null) {
+           if (service != null) {
                 try {
+                    String name;
+                    if (lorieView.getDisplay() == null || lorieView.getDisplay().getDisplayId() == Display.DEFAULT_DISPLAY)
+                        name = "Builtin Display";
+                    else if (SamsungDexUtils.checkDeXEnabled(this))
+                        name = "Dex Display";
+                    else
+                        name = "External Display";
                     service.windowChanged(sfc);
                 } catch (RemoteException e) {
                     Log.e("MainActivity", "failed to send windowChanged request", e);

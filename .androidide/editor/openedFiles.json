@@ -1,50 +1,50 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/README.md",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/aidl/com/project_aurora/emu/ICmdEntryInterface.aidl",
       "selection": {
         "end": {
           "column": 0,
-          "index": 18,
-          "line": 2
+          "index": 0,
+          "line": 0
         },
         "start": {
           "column": 0,
-          "index": 18,
-          "line": 2
+          "index": 0,
+          "line": 0
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/core/services/XserverLoader.kt",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 41,
-          "line": 1
+          "column": 46,
+          "index": 1693,
+          "line": 41
         },
         "start": {
-          "column": 0,
-          "index": 41,
-          "line": 1
+          "column": 46,
+          "index": 1693,
+          "line": 41
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/build.gradle.kts",
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/XserverActivity.java",
       "selection": {
         "end": {
-          "column": 3,
-          "index": 1794,
-          "line": 85
+          "column": 45,
+          "index": 9348,
+          "line": 213
         },
         "start": {
-          "column": 3,
-          "index": 1794,
-          "line": 85
+          "column": 45,
+          "index": 9348,
+          "line": 213
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/build.gradle.kts"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/XserverActivity.java"
 }

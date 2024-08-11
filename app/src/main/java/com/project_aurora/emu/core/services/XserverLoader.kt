@@ -32,10 +32,10 @@ class XserverLoader : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
             tasker.newCoroutine("Xserver", {
                  vars.setEnvVariables()
-                 shellProcess.newProcess("X11", cmd =  vars.exportVariables + ";" +
+                 shellProcess.newProcess("X11", cmd = vars.exportVariables + ";" +
                         "mkdir -p /data/data/com.project_aurora.emu/files/usr/tmp; mkdir -p /data/data/com.project_aurora.emu/files/home; chmod 700 -R /data/data/com.project_aurora.emu/files/usr;" +
-                        "/data/data/com.project_aurora.emu/files/usr/generateSymlinks.sh; " + "chmod 755 -R /data/data/com.project_aurora.emu/files/usr/bin/box64" +
-                        "export CLASSPATH=" + main.getClassPath(this@XserverLoader) + ";" +  "/system/bin/app_process -Xnoimage-dex2oat / com.project_aurora.emu.CmdEntryPoint :0" + "box64 wine explorer /desktop=shell,1280x720 explorer")
+                        "export CLASSPATH=" + main.getClassPath(this) + ";" +
+                        "/system/bin/app_process -Xnoimage-dex2oat / com.project_aurora.emu.CmdEntryPoint :0")
                  shellProcess.executeProcessByName("X11")
             }, DispatchersType.DEFAULT) 
             

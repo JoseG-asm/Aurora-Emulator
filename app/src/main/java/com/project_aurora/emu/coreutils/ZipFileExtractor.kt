@@ -11,12 +11,12 @@ import net.lingala.zip4j.ZipFile
 import net.lingala.zip4j.progress.ProgressMonitor
 
 class ZipFileExtractor {
-    fun extractZip(
+    fun <T> extractZip(
         zipFilePath: String?,
         destinationPath: String,
         progressExtractBar: ProgressBar?,
         progressText: TextView?,
-        activity: MainActivity
+        activity: T
     ) {
         try {
             Log.v("Arquive Extract", "Start Extract")
@@ -29,7 +29,7 @@ class ZipFileExtractor {
             zipFile.extractAll(destinationPath)
 
             while (!progressMonitor.state.equals(ProgressMonitor.State.READY)) {
-                activity.runOnUiThread {
+                (activity as? MainActivity)?.runOnUiThread {
                     progressText?.text = progressMonitor.percentDone.toString() + "%"
                     progressExtractBar?.progress = progressMonitor.percentDone
                 }

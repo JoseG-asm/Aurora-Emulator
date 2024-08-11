@@ -7,6 +7,9 @@ import android.content.Intent
 import android.content.Context
 import java.io.File
 import android.view.View
+import com.google.android.material.navigation.NavigationBarView
+import androidx.navigation.NavController
+import androidx.navigation.ui.setupWithNavController
 
 import com.project_aurora.emu.databinding.ActivityMainBinding
 import com.project_aurora.emu.coreutils.ZipFileExtractor
@@ -54,5 +57,9 @@ class MainViewModel : ViewModel() {
         }, DispatchersType.DEFAULT)
         
         asyncTasker.executeCoroutine("res") 
+    }
+    
+    fun setUpNavigation(navController: NavController, binding: ActivityMainBinding) {
+        (binding.bottomNavigation as NavigationBarView).setupWithNavController(navController)
     }
 }

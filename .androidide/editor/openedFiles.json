@@ -49,17 +49,32 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 26,
-          "index": 1915,
-          "line": 48
+          "column": 52,
+          "index": 674,
+          "line": 18
         },
         "start": {
-          "column": 26,
-          "index": 1915,
-          "line": 48
+          "column": 0,
+          "index": 622,
+          "line": 18
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 425,
+          "line": 12
+        },
+        "start": {
+          "column": 0,
+          "index": 425,
+          "line": 12
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt"
 }

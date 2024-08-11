@@ -52,18 +52,13 @@ public class MainActivity : AppCompatActivity() {
         
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+        
         viewModel.apply {
             extractResources(this@MainActivity, binding)
+            setUpNavigation(navController, binding)
         }
-        
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-
-        val navController = navHostFragment.navController
-        setUpNavigation(navController)
-    }
-
-    private fun setUpNavigation(navController: NavController) {
-        (binding.bottomNavigation as NavigationBarView).setupWithNavController(navController)
     }
 
     override fun onDestroy() {

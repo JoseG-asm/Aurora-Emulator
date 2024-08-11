@@ -5,16 +5,46 @@
       "selection": {
         "end": {
           "column": 0,
-          "index": 0,
-          "line": 0
+          "index": 18,
+          "line": 2
         },
         "start": {
           "column": 0,
-          "index": 0,
-          "line": 0
+          "index": 18,
+          "line": 2
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 41,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "index": 41,
+          "line": 1
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 3,
+          "index": 1794,
+          "line": 85
+        },
+        "start": {
+          "column": 3,
+          "index": 1794,
+          "line": 85
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/README.md"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/build.gradle.kts"
 }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- Aurora Colors -->
+    <color name="aurora_purple">#F3E5F5</color>
+    <color name="aurora_primary">#154FE2</color>
+    <color name="aurora_onPrimary">#FFFFFF</color>
+    <color name="aurora_primaryContainer">#DCE1FF</color>
+    <color name="aurora_onPrimaryContainer">#001551</color>
+    <color name="aurora_secondary">#595D72</color>
+    <color name="aurora_onSecondary">#FFFFFF</color>
+    <color name="aurora_secondaryContainer">#DEE1F9</color>
+    <color name="aurora_onSecondaryContainer">#161B2C</color>
+    <color name="aurora_tertiary">#75546F</color>
+    <color name="aurora_onTertiary">#FFFFFF</color>
+    <color name="aurora_tertiaryContainer">#FFD7F5</color>
+    <color name="aurora_onTertiaryContainer">#2C1229</color>
+    <color name="aurora_error">#BA1A1A</color>
+    <color name="aurora_errorContainer">#FFDAD6</color>
+    <color name="aurora_onError">#FFFFFF</color>
+    <color name="aurora_onErrorContainer">#410002</color>
+    <color name="aurora_background">#FEFBFF</color>
+    <color name="aurora_onBackground">#1B1B1F</color>
+    <color name="aurora_surface">#FEFBFF</color>
+    <color name="aurora_onSurface">#1B1B1F</color>
+    <color name="aurora_surfaceVariant">#E2E1EC</color>
+    <color name="aurora_onSurfaceVariant">#45464F</color>
+    <color name="aurora_outline">#767680</color>
+    <color name="aurora_inverseOnSurface">#F2F0F4</color>
+    <color name="aurora_inverseSurface">#303034</color>
+    <color name="aurora_inversePrimary">#B7C4FF</color>
+    <color name="aurora_shadow">#000000</color>
+    <color name="aurora_surfaceTint">#154FE2</color>
+    <color name="aurora_outlineVariant">#C6C5D0</color>
+    <color name="aurora_scrim">#000000</color>
+</resources>

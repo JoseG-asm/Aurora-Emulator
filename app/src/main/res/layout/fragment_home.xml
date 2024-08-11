@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/coordinator">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="10dp"
+         android:layout_marginEnd="10dp"
+         android:orientation="vertical"
+         android:layout_marginTop="@dimen/spacing_large"
+         android:layout_marginStart="10dp">
+
+        <androidx.viewpager2.widget.ViewPager2
+             android:layout_height="wrap_content"
+             android:id="@+id/container_view_pager"
+             android:layout_width="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             app:icon="@drawable/ic_controller_outline"
+             app:backgroundTint="?attr/colorSurfaceVariant"
+             android:layout_margin="@dimen/spacing_med"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:text="Desktop"
+             android:id="@+id/fab_desktop" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

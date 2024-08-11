@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:clickable="false"
+     android:textColor="?@attr/colorPrimary"
+     tools:text="CPU Settings"
+     android:focusable="false"
+     android:layout_gravity="start|center_vertical"
+     android:textAlignment="viewStart"
+     android:paddingVertical="10dp"
+     style="@style/TextAppearance.Material3.TitleSmall"
+     android:paddingHorizontal="20dp"
+     android:id="@+id/settings_header"
+     android:textStyle="bold" />

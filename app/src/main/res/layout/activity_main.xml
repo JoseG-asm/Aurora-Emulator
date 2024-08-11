@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         app:navGraph="@navigation/nav_graph"
+         app:defaultNavHost="true"
+         android:name="androidx.navigation.fragment.NavHostFragment"
+         android:layout_weight="1"
+         android:id="@+id/nav_host_fragment" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textAlignment="center"
+         android:layout_marginStart="@dimen/spacing_medlarge"
+         android:id="@+id/updateExtractProgress" />
+
+    <ProgressBar
+         android:layout_height="@dimen/spacing_small"
+         android:layout_width="match_parent"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:theme="@style/Theme.Aurora.Main"
+         android:id="@+id/progressExtractBar" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:layout_height="65dp"
+         android:layout_width="match_parent"
+         app:labelVisibilityMode="labeled"
+         app:menu="@menu/bottom_nav_menu"
+         android:theme="@style/Theme.Material3.DayNight.NoActionBar"
+         android:id="@+id/bottom_navigation" />
+
+</LinearLayout>

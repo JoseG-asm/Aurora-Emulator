@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Aurora.Splash.Main" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/aurora_surface</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Aurora.Main</item>
+    </style>
+
+    <style name="Theme.Aurora" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Main theme colors -->
+        <item name="colorPrimary">@color/aurora_primary</item>
+        <item name="colorOnPrimary">@color/aurora_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/aurora_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/aurora_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/aurora_secondary</item>
+        <item name="colorOnSecondary">@color/aurora_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/aurora_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/aurora_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/aurora_tertiary</item>
+        <item name="colorOnTertiary">@color/aurora_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/aurora_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/aurora_onTertiaryContainer</item>
+        <item name="colorError">@color/aurora_error</item>
+        <item name="colorErrorContainer">@color/aurora_errorContainer</item>
+        <item name="colorOnError">@color/aurora_onError</item>
+        <item name="colorOnErrorContainer">@color/aurora_onErrorContainer</item>
+        <item name="android:colorBackground">@color/aurora_background</item>
+        <item name="colorOnBackground">@color/aurora_onBackground</item>
+        <item name="colorSurface">@color/aurora_surface</item>
+        <item name="colorOnSurface">@color/aurora_onSurface</item>
+        <item name="colorSurfaceVariant">@color/aurora_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/aurora_onSurfaceVariant</item>
+        <item name="colorOutline">@color/aurora_outline</item>
+        <item name="colorOnSurfaceInverse">@color/aurora_inverseOnSurface</item>
+        <item name="colorSurfaceInverse">@color/aurora_inverseSurface</item>
+        <item name="colorPrimaryInverse">@color/aurora_inversePrimary</item>
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+         <!-- <item name="sliderStyle">@style/CitraSlider</item> -->
+
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    
+    <style name="Theme.Aurora.Base" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Base theme colors -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <!-- Trick for API >= 29 specific changes -->
+    <style name="Theme.Aurora.Main" parent="Theme.Aurora" />
+
+</resources>

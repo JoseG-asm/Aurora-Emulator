@@ -1,7 +1,7 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/AuroraApplication.kt",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/CMakeLists.txt",
       "selection": {
         "end": {
           "column": 0,
@@ -16,65 +16,20 @@
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/ThemeProvider.kt",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/vulkan-wsi-layer/CMakeLists.txt",
       "selection": {
         "end": {
-          "column": 28,
-          "index": 276,
-          "line": 9
+          "column": 77,
+          "index": 8778,
+          "line": 202
         },
         "start": {
-          "column": 8,
-          "index": 256,
-          "line": 9
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/res/values/colors.xml",
-      "selection": {
-        "end": {
-          "column": 33,
-          "index": 378,
-          "line": 8
-        },
-        "start": {
-          "column": 17,
-          "index": 362,
-          "line": 8
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt",
-      "selection": {
-        "end": {
-          "column": 52,
-          "index": 674,
-          "line": 18
-        },
-        "start": {
-          "column": 0,
-          "index": 622,
-          "line": 18
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 425,
-          "line": 12
-        },
-        "start": {
-          "column": 0,
-          "index": 425,
-          "line": 12
+          "column": 77,
+          "index": 8778,
+          "line": 202
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/Project Aurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt"
+  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/vulkan-wsi-layer/CMakeLists.txt"
 }

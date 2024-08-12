@@ -3,6 +3,6 @@
 3    package="com.termux.x11" >
 4
 5    <uses-sdk android:minSdkVersion="24" />
-5-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/src/main/AndroidManifest.xml
+5-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/src/main/AndroidManifest.xml
 6
 7</manifest>

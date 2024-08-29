@@ -57,7 +57,9 @@ class SettingsFragment : Fragment() {
                     {
                         // onclick
                         requireContext()
-                            .startActivity(Intent(requireContext(), LoriePreferences::class.java))
+                            .startActivity(
+                                Intent(requireContext(), LoriePreferences::class.java)
+                            )
                     }
                 )
             )

@@ -40,7 +40,6 @@ public class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding
         get() = _binding!!
     private lateinit var viewModel: MainViewModel
-    private val shellProcess = ShellLoader()
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -82,54 +82,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
     kotlinOptions.jvmTarget = "11"
 }
 
-project.tasks.register("buildVulkanWsiLayer") {
-    doLast {
-        var shellWrapper = arrayOf<String>()
-        var path = "src/main/cpp/vulkan-wsi-layer"
-        if (System.getProperty("os.name") == "Linux") {
-            shellWrapper = arrayOf("/system/bin/sh", "-c")
-        } else {
-            throw RuntimeException("Unsupported operating system")
-        }
-
-
-        if (!project.file(path).exists())
-            throw RuntimeException("path does not exist: $path")
-
-        val buildDir = project.file("$path/build")
-        if (!buildDir.exists()) buildDir.mkdirs()
-
-        // Run cmake command
-        val cmakeProcess = ProcessBuilder().command(*shellWrapper, "cmake -DCMAKE_INSTALL_PREFIX=${buildDir.absolutePath} .")
-            .directory(project.file(path))
-            .start()
-            
-        cmakeProcess.inputStream.bufferedReader().lines().forEach { println(it) }
-        cmakeProcess.errorStream.bufferedReader().lines().forEach { println(it) }
-        
-        if (cmakeProcess.waitFor() != 0)
-            throw RuntimeException("CMake failed: ${cmakeProcess.exitValue()}\nSTDOUT:\n${cmakeProcess.inputStream.reader().readText().trim()}\nSTDERR:\n${cmakeProcess.errorStream.reader().readText().trim()}")
-
-        // Run make command
-        val makeProcess = ProcessBuilder().command(*shellWrapper, "make -j8 install")
-            .directory(project.file(path))
-            .start()
-            
-        makeProcess.inputStream.bufferedReader().lines().forEach { println(it) }
-        makeProcess.errorStream.bufferedReader().lines().forEach { println(it) }    
-        if (makeProcess.waitFor() != 0)
-            throw RuntimeException("Make failed: ${makeProcess.exitValue()}\nSTDOUT:\n${makeProcess.inputStream.reader().readText().trim()}\nSTDERR:\n${makeProcess.errorStream.reader().readText().trim()}")
-    }
-
-    outputs.upToDateWhen { false } // Always run this task
-}
-
-project.tasks.whenTaskAdded (fun(t: Task) {
-    if (t.name == "generateDebugAssets" || t.name == "generateReleaseAssets")
-        t.dependsOn("buildVulkanWsiLayer")
-    }
-)
-
 dependencies {
     // AndroidX dependencies
     implementation("androidx.core:core-ktx:1.8.0")

@@ -12,18 +12,18 @@ import com.project_aurora.emu.model.SettingsModel
 import com.google.android.material.materialswitch.MaterialSwitch
 import com.project_aurora.emu.R
 
-class SettingsViewHolder(private val itemView : View) : RecyclerView.ViewHolder(itemView) {
+class SettingsViewHolder(private val itemView : View) : GenericHolder<SettingsModel>(itemView) {
    val settingsName: TextView = itemView.findViewById(R.id.title_preferences_model)
    val settingsDescription: TextView = itemView.findViewById(R.id.description_preferences_model)
    val imageRes: ImageView = itemView.findViewById(R.id.set_img)
 
-   fun bind(preferencesModel: SettingsModel) {
-        settingsName.text = preferencesModel.settingsTitle
-        settingsDescription.text = preferencesModel.descriptionSettings
-        imageRes.setImageResource(preferencesModel.imageRes)
+   override fun bind(item: SettingsModel) {
+        settingsName.text = item.settingsTitle
+        settingsDescription.text = item.descriptionSettings
+        imageRes.setImageResource(item.imageRes)
 
         itemView.setOnClickListener {
-            preferencesModel.onClickListener.invoke()
+            item.onClickListener.invoke()
         }
     }
 }

@@ -1,32 +1,17 @@
 {
   "allFiles": [
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/native-lib.cpp",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 17,
-          "line": 1
+          "column": 25,
+          "index": 2086,
+          "line": 47
         },
         "start": {
-          "column": 0,
-          "index": 17,
-          "line": 1
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/CMakeLists.txt",
-      "selection": {
-        "end": {
-          "column": 11,
-          "index": 351,
-          "line": 16
-        },
-        "start": {
-          "column": 11,
-          "index": 351,
-          "line": 16
+          "column": 25,
+          "index": 2086,
+          "line": 47
         }
       }
     },
@@ -34,19 +19,34 @@
       "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/NativeCode.kt",
       "selection": {
         "end": {
-          "column": 47,
-          "index": 162,
-          "line": 7
+          "column": 0,
+          "index": 0,
+          "line": 0
         },
         "start": {
-          "column": 47,
-          "index": 162,
-          "line": 7
+          "column": 0,
+          "index": 0,
+          "line": 0
         }
       }
     },
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/.gitignore",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/AuroraApplication.kt",
+      "selection": {
+        "end": {
+          "column": 10,
+          "index": 242,
+          "line": 12
+        },
+        "start": {
+          "column": 10,
+          "index": 242,
+          "line": 12
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/main/ThemeProvider.kt",
       "selection": {
         "end": {
           "column": 0,
@@ -61,20 +61,170 @@
       }
     },
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/.gitignore",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 11,
-          "index": 11,
+          "column": 42,
+          "index": 1505,
+          "line": 38
+        },
+        "start": {
+          "column": 42,
+          "index": 1505,
+          "line": 38
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/fragments/HomeFragment.kt",
+      "selection": {
+        "end": {
+          "column": 48,
+          "index": 948,
+          "line": 23
+        },
+        "start": {
+          "column": 48,
+          "index": 948,
+          "line": 23
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/PreferencesAdapter.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
           "line": 0
         },
         "start": {
-          "column": 11,
-          "index": 11,
+          "column": 0,
+          "index": 0,
           "line": 0
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/AdapterSettings.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 343,
+          "line": 9
+        },
+        "start": {
+          "column": 0,
+          "index": 343,
+          "line": 9
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/viewholder/SettingsAbstractHolder.kt",
+      "selection": {
+        "end": {
+          "column": 39,
+          "index": 906,
+          "line": 21
+        },
+        "start": {
+          "column": 39,
+          "index": 906,
+          "line": 21
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/viewholder/SettingsViewHolder.kt",
+      "selection": {
+        "end": {
+          "column": 83,
+          "index": 549,
+          "line": 14
+        },
+        "start": {
+          "column": 83,
+          "index": 549,
+          "line": 14
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/model/PreferencesModel.kt",
+      "selection": {
+        "end": {
+          "column": 28,
+          "index": 67,
+          "line": 2
+        },
+        "start": {
+          "column": 28,
+          "index": 67,
+          "line": 2
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/fragments/SettingsFragment.kt",
+      "selection": {
+        "end": {
+          "column": 23,
+          "index": 1413,
+          "line": 41
+        },
+        "start": {
+          "column": 23,
+          "index": 1413,
+          "line": 41
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/model/SettingsModel.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/viewholder/GenericHolder.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 447,
+          "line": 14
+        },
+        "start": {
+          "column": 0,
+          "index": 0,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/build.gradle.kts",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 1775,
+          "line": 83
+        },
+        "start": {
+          "column": 0,
+          "index": 1775,
+          "line": 83
         }
       }
     }
   ],
-  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/CMakeLists.txt"
+  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/build.gradle.kts"
 }

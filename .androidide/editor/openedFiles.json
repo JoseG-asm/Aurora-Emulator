@@ -1,7 +1,52 @@
 {
   "allFiles": [
     {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/native-lib.cpp",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 17,
+          "line": 1
+        },
+        "start": {
+          "column": 0,
+          "index": 17,
+          "line": 1
+        }
+      }
+    },
+    {
       "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/CMakeLists.txt",
+      "selection": {
+        "end": {
+          "column": 11,
+          "index": 351,
+          "line": 16
+        },
+        "start": {
+          "column": 11,
+          "index": 351,
+          "line": 16
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/NativeCode.kt",
+      "selection": {
+        "end": {
+          "column": 47,
+          "index": 162,
+          "line": 7
+        },
+        "start": {
+          "column": 47,
+          "index": 162,
+          "line": 7
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/.gitignore",
       "selection": {
         "end": {
           "column": 0,
@@ -16,20 +61,20 @@
       }
     },
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/vulkan-wsi-layer/CMakeLists.txt",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/.gitignore",
       "selection": {
         "end": {
-          "column": 77,
-          "index": 8778,
-          "line": 202
+          "column": 11,
+          "index": 11,
+          "line": 0
         },
         "start": {
-          "column": 77,
-          "index": 8778,
-          "line": 202
+          "column": 11,
+          "index": 11,
+          "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/vulkan-wsi-layer/CMakeLists.txt"
+  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/CMakeLists.txt"
 }

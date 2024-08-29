@@ -234,7 +234,7 @@ public class XserverActivity extends AppCompatActivity implements View.OnApplyWi
 
         initStylusAuxButtons();
         initMouseAuxButtons();
-        init.newClientXserver(XserverActivity.this);
+        init.newClientXserver(this, ":0");
 
         if (SDK_INT >= VERSION_CODES.TIRAMISU
                 && checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PERMISSION_GRANTED
@@ -554,7 +554,7 @@ public class XserverActivity extends AppCompatActivity implements View.OnApplyWi
     @Override
     public void onResume() {
         super.onResume();
-        init.newClientXserver(XserverActivity.this);
+        init.newClientXserver(this, ":0");
         getLorieView().requestFocus();
     }
 

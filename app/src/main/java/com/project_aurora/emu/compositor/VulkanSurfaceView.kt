@@ -1,4 +1,4 @@
-package com.project_aurora.emu.vulkan
+package com.project_aurora.emu.compositor
 
 import android.content.Context
 import android.util.AttributeSet
@@ -19,16 +19,13 @@ class VulkanSurfaceView @JvmOverloads constructor(
     }
 
     override fun surfaceCreated(holder: SurfaceHolder) {
-        NativeCode().setSurface(holder.surface)
-        NativeCode().render()
     }
 
     override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
-        NativeCode().surfaceChanged(width, height)
+        NativeCode().surfaceChanged(holder.surface, width, height)
     }
 
     override fun surfaceDestroyed(holder: SurfaceHolder) {
-        NativeCode().cleanup()
     }
 
 }

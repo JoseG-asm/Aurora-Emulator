@@ -8,7 +8,7 @@ import android.util.Log
 class ShellLoader { 
     inner class Process(
         var name: String,
-        var cmd:  String
+        var cmd: String
     ) {
         private val standardOutput = StringBuilder()
         private val standardOutputError = StringBuilder()
@@ -19,13 +19,13 @@ class ShellLoader {
         
         private fun executeShellProcess(cmd: String) {
             try {
+                Log.e("Trying to exec", cmd)
                 val shellProcess = Runtime.getRuntime().exec("/system/bin/sh")
                 val os = DataOutputStream(shellProcess.outputStream)
                 
-                os.writeBytes("$cmd\n")
+                os.writeBytes("$cmd\nexit\n")
                 os.flush()
                 
-
                 val stdout = BufferedReader(InputStreamReader(shellProcess.inputStream))
                 val stderr = BufferedReader(InputStreamReader(shellProcess.errorStream))
 
@@ -34,7 +34,7 @@ class ShellLoader {
                         var out: String?
                         while (stdout.readLine().also { out = it } != null) {
                             synchronized(standardOutput) {
-                                Log.d("ShellLoader", "stdout: $out")
+                                Log.e("ShellLoader", "stdout: $out")
                                 standardOutput.append(out).append("\n")
                             }
                         }
@@ -49,7 +49,7 @@ class ShellLoader {
                         var s: String?
                         while (stderr.readLine().also { s = it } != null) {
                             synchronized(standardOutputError) {
-                                Log.d("ShellLoader", "stderr: $s")
+                                Log.e("ShellLoader", "stderr: $s")
                                 standardOutputError.append(s).append("\n")
                             }
                         }

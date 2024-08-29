@@ -20,6 +20,9 @@ class EnvVars(val mEnvironmentVariables: MutableMap<String, String> = mutableMap
         putVar("LANG", "LANG=en_US.UTF-8")
         putVar("BOX64_MMAP32", "BOX64_MMAP32=1")
         putVar("DISPLAY", "DISPLAY=:0")
+        //putVar("LD_LIBRARY_PATH", "LD_LIBRARY_PATH=${MainViewModel.usrDir}/lib")
+        //putVar("PATH", "\$PATH:$usrDir/bin:$appRootDir/wine/bin")
+        putVar("PREFIX", "PREFIX=${MainViewModel.usrDir.path}")
         
         // vk wsi layer
         putVar("ZINK", "GALLIUM_DRIVER=zink")

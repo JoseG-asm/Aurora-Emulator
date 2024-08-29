@@ -1,4 +1,4 @@
-package com.project_aurora.emu.vulkan
+package com.project_aurora.emu.compositor
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

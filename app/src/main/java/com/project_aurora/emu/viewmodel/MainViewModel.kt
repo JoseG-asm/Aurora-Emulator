@@ -20,15 +20,16 @@ class MainViewModel : ViewModel() {
     private val asyncTasker = AsyncTask()
     companion object FilePath {
         public val appRootDir = "/data/data/com.project_aurora.emu/files"
-        public val usrDir = File("$appRootDir/usr")
-        public val wineFolder = File("$appRootDir/wine/wine-9.3-vanilla")
-        public val homeDir = File("$appRootDir/files/home")
-        public val tmpDir = File("$usrDir/tmp")
+        public val usrDir = File("$appRootDir/usr").apply { mkdirs() }
+        public val wineFolder = File("$appRootDir/wine")
+        public val homeDir = File("$appRootDir/files/home").apply { mkdirs() }
+        public val tmpDir = File("$usrDir/tmp").apply { mkdirs() }
         public val wineUtilsFolder = File("$appRootDir/wine-utils")
         public val wine = File("${wineFolder.toString()}/bin/wine")
         public val pulseAudio = File("$usrDir/bin/pulseaudio")
         public val virgl_socket = File("$usrDir/bin/virgl_test_server")
         public val box64 = File("$usrDir/bin/box64")
+        public val vkcube = File("$usrDir/bin/vkcube")
         public val xkbRootDir = File("$usrDir/share/X11/xkb")
     }
 

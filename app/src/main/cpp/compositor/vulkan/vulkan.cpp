@@ -15,6 +15,13 @@ VulkanCompositor::init(JNIEnv *env, jobject surface) {
     compositor = this;
     window = ANativeWindow_fromSurface(env, surface);
     
+    AHardwareBuffer* ahb
+    ExternalMemoryAndroid external_memory_android;
+    ExternalMemoryAndroid::image_ahb_t img = {
+        .sock_fd = VulkanCompositor::createSocket(),
+        .ahb = *ahb
+    };
+    
 }
 
 VulkanCompositor::cleanup() {

@@ -10,7 +10,6 @@ package com.project_aurora.emu.overlay
 import android.view.KeyEvent.*
 
 object XkeyCodes {
-    // TODO: define XkeyCodes list of
     const val DPAD_UP : Int = 19; // ANDROID_KEYCODE_DPAD_UP
     const val DPAD_DOWN : Int = 20; // ANDROID_KEYCODE_DPAD_DOWN
     const val DPAD_LEFT : Int = 21; // ANDROID_KEYCODE_DPAD_LEFT
@@ -152,6 +151,4 @@ object XkeyCodes {
     const val TV : Int = 170; // ANDROID_KEYCODE_TV
     const val CALENDAR : Int = 208; // ANDROID_KEYCODE_CALENDAR
     const val CALCULATOR : Int = 210; // ANDROID_KEYCODE_CALCULATOR
-    
-    
 }

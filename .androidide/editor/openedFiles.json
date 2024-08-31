@@ -1,212 +1,32 @@
 {
   "allFiles": [
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/viewmodel/MainViewModel.kt",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.cpp",
       "selection": {
         "end": {
-          "column": 25,
-          "index": 2086,
-          "line": 47
+          "column": 6,
+          "index": 586,
+          "line": 22
         },
         "start": {
-          "column": 25,
-          "index": 2086,
-          "line": 47
+          "column": 6,
+          "index": 586,
+          "line": 22
         }
       }
     },
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/NativeCode.kt",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.h",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 30,
+          "index": 2360,
+          "line": 92
         },
         "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/AuroraApplication.kt",
-      "selection": {
-        "end": {
-          "column": 10,
-          "index": 242,
-          "line": 12
-        },
-        "start": {
-          "column": 10,
-          "index": 242,
-          "line": 12
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/main/ThemeProvider.kt",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        },
-        "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/main/MainActivity.kt",
-      "selection": {
-        "end": {
-          "column": 42,
-          "index": 1505,
-          "line": 38
-        },
-        "start": {
-          "column": 42,
-          "index": 1505,
-          "line": 38
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/fragments/HomeFragment.kt",
-      "selection": {
-        "end": {
-          "column": 48,
-          "index": 948,
-          "line": 23
-        },
-        "start": {
-          "column": 48,
-          "index": 948,
-          "line": 23
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/PreferencesAdapter.kt",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        },
-        "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/AdapterSettings.kt",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 343,
-          "line": 9
-        },
-        "start": {
-          "column": 0,
-          "index": 343,
-          "line": 9
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/viewholder/SettingsAbstractHolder.kt",
-      "selection": {
-        "end": {
-          "column": 39,
-          "index": 906,
-          "line": 21
-        },
-        "start": {
-          "column": 39,
-          "index": 906,
-          "line": 21
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/viewholder/SettingsViewHolder.kt",
-      "selection": {
-        "end": {
-          "column": 83,
-          "index": 549,
-          "line": 14
-        },
-        "start": {
-          "column": 83,
-          "index": 549,
-          "line": 14
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/model/PreferencesModel.kt",
-      "selection": {
-        "end": {
-          "column": 28,
-          "index": 67,
-          "line": 2
-        },
-        "start": {
-          "column": 28,
-          "index": 67,
-          "line": 2
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/fragments/SettingsFragment.kt",
-      "selection": {
-        "end": {
-          "column": 23,
-          "index": 1413,
-          "line": 41
-        },
-        "start": {
-          "column": 23,
-          "index": 1413,
-          "line": 41
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/model/SettingsModel.kt",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        },
-        "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/java/com/project_aurora/emu/ui/adapters/viewholder/GenericHolder.kt",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": 447,
-          "line": 14
-        },
-        "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 30,
+          "index": 2360,
+          "line": 92
         }
       }
     },
@@ -215,16 +35,16 @@
       "selection": {
         "end": {
           "column": 0,
-          "index": 1775,
-          "line": 83
+          "index": 0,
+          "line": 0
         },
         "start": {
           "column": 0,
-          "index": 1775,
-          "line": 83
+          "index": 0,
+          "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/build.gradle.kts"
+  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.cpp"
 }

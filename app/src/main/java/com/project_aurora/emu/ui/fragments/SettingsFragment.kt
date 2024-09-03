@@ -12,6 +12,7 @@ import com.project_aurora.emu.R
 import com.project_aurora.emu.databinding.FragmentSettingsBinding
 import com.project_aurora.emu.model.SettingsModel
 import com.project_aurora.emu.ui.activities.SystemShellActivity
+import com.project_aurora.emu.ui.activities.LogActivity
 import com.project_aurora.emu.ui.adapters.AdapterSettings
 
 class SettingsFragment : Fragment() {
@@ -47,6 +48,18 @@ class SettingsFragment : Fragment() {
                         requireContext()
                             .startActivity(
                                 Intent(requireContext(), SystemShellActivity::class.java)
+                            )
+                    }
+                ),
+                SettingsModel(
+                    getString(R.string.preferences_system_shell_title),
+                    getString(R.string.preferences_system_shell_description),
+                    R.drawable.ic_settings,
+                    {
+                        // onclick
+                        requireContext()
+                            .startActivity(
+                                Intent(requireContext(), LogActivity::class.java)
                             )
                     }
                 ),

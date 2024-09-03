@@ -23,6 +23,7 @@ import android.view.Surface;
 import androidx.annotation.Keep;
 
 import java.io.DataInputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.net.ConnectException;
@@ -41,6 +42,8 @@ public class CmdEntryPoint extends ICmdEntryInterface.Stub {
     private static Handler handler;
     public static Context ctx;
     public static boolean load = false;
+    public static ServerSocket listeningSocket;
+    public static Socket sock_fd;
 
     /**
      * Command-line entry point.
@@ -138,8 +141,14 @@ public class CmdEntryPoint extends ICmdEntryInterface.Stub {
     void spawnListeningThread() {
         new Thread(() -> {
             Log.e("CmdEntryPoint", "Listening port " + PORT);
-            try (ServerSocket listeningSocket =
-                         new ServerSocket(PORT, 0, InetAddress.getByName("127.0.0.1"))) {
+                
+            try {
+            	listeningSocket = new ServerSocket(PORT, 0, InetAddress.getByName("127.0.0.1"));
+            } catch(IOException err) {
+            	err.getMessage();
+            }
+                
+            try {
                 listeningSocket.setReuseAddress(true);
                 while (true) {
                     try (Socket client = listeningSocket.accept()) {
@@ -164,8 +173,9 @@ public class CmdEntryPoint extends ICmdEntryInterface.Stub {
     public static void requestConnection() {
         System.err.println("Requesting connection...");
         new Thread(() -> {
-            try (Socket socket = new Socket("127.0.0.1", CmdEntryPoint.PORT)) {
+            try(Socket socket = new Socket("127.0.0.1", CmdEntryPoint.PORT)) {
                 socket.getOutputStream().write(CmdEntryPoint.MAGIC);
+                sock_fd = socket;    
             } catch (ConnectException e) {
                 if (e.getMessage() != null && e.getMessage().contains("Connection refused")) {
                     Log.e("CmdEntryPoint", "ECONNREFUSED: Connection has been refused by the server");
@@ -175,6 +185,15 @@ public class CmdEntryPoint extends ICmdEntryInterface.Stub {
                 Log.e("CmdEntryPoint", "Something went wrong when we requested connection", e);
             }
         }).start();
+    }
+    
+    public static void closeConnection() {
+        try {
+        	sock_fd.close();
+            listeningSocket.close();
+        } catch(IOException err) {
+        	
+        }
     }
 
     @SuppressLint("DiscouragedPrivateApi")

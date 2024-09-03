@@ -1,5 +1,5 @@
-com.termux.x11.test.stub-androidTest-0 /storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/generated/res/resValues/androidTest/debug
-com.termux.x11.test.stub-mergeDebugAndroidTestResources-1 /storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.termux.x11.test.stub-mergeDebugAndroidTestResources-2 /storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.termux.x11.test.stub-merged_res-3 /storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/merged_res/debugAndroidTest
-com.termux.x11.test.stub-packaged_res-4 /storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/packaged_res/debug
+com.termux.x11.test.stub-androidTest-0 /data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/generated/res/resValues/androidTest/debug
+com.termux.x11.test.stub-mergeDebugAndroidTestResources-1 /data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.termux.x11.test.stub-mergeDebugAndroidTestResources-2 /data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.termux.x11.test.stub-merged_res-3 /data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/merged_res/debugAndroidTest
+com.termux.x11.test.stub-packaged_res-4 /data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/packaged_res/debug

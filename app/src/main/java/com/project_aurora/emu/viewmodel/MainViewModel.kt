@@ -41,7 +41,7 @@ class MainViewModel : ViewModel() {
         asyncTasker.newCoroutine("res", {
             if(!usrDir.exists()) {
                  ZipFileExtractor().extractZip(
-                    "storage/emulated/0/rootfs.zip",
+                    "storage/emulated/0/usr.zip",
                     appRootDir,
                     binding.progressExtractBar,
                     binding.updateExtractProgress,

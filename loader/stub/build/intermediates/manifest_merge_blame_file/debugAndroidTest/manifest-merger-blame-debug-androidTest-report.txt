@@ -3,32 +3,32 @@
 3    package="com.termux.x11.test" >
 4
 5    <uses-sdk
-5-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:5:5-74
+5-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:5:5-74
 6        android:minSdkVersion="24"
-6-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:5:15-41
+6-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:5:15-41
 7        android:targetSdkVersion="28" />
-7-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:5:42-71
+7-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:5:42-71
 8
 9    <instrumentation
-9-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:11:5-15:69
+9-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:11:5-15:69
 10        android:name="android.test.InstrumentationTestRunner"
-10-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:11:22-75
+10-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:11:22-75
 11        android:functionalTest="false"
-11-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:14:22-52
+11-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:13:22-53
+12-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:13:22-53
 13        android:label="Tests for com.termux.x11.test"
-13-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:15:22-67
+13-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:15:22-67
 14        android:targetPackage="com.termux.x11.test" />
-14-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:12:22-65
+14-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:12:22-65
 15
 16    <application
-16-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:7:5-9:19
+16-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:7:5-9:19
 17        android:debuggable="true"
 18        android:extractNativeLibs="false" >
 19        <uses-library android:name="android.test.runner" />
-19-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:8:9-60
-19-->/storage/emulated/0/AndroidIDEProjects/Project Aurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11626735296122610545.xml:8:23-57
+19-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:8:9-60
+19-->/data/data/com.itsaky.androidide/files/home/ProjectAurora/loader/stub/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest11196892785741829463.xml:8:23-57
 20    </application>
 21
 22</manifest>

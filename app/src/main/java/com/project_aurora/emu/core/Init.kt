@@ -19,6 +19,8 @@ import com.project_aurora.emu.coreutils.AsyncTask
 import com.project_aurora.emu.coreutils.DispatchersType
 import com.project_aurora.emu.viewmodel.MainViewModel
 
+import androidx.lifecycle.ViewModelStoreOwner
+
 
 /**
 * @author Jose G.
@@ -27,16 +29,20 @@ import com.project_aurora.emu.viewmodel.MainViewModel
 class Init() {
     private val main = MainActivity()
     fun newClientXserver(context: Context, socket: String = ":0") {
+        Thread {
         if (true) { 
                 ShellLoader().apply {
                     newProcess("xserver", 
+                        "mkdir -p /data/data/com.project_aurora.emu/files/usr/tmp; mkdir -p /data/data/com.project_aurora.emu/files/home; chmod 700 -R /data/data/com.project_aurora.emu/files/usr;" +
                         "export CLASSPATH=" + main.getClassPath(context) + "; " +
-                        "/system/bin/app_process -Xnoimage-dex2oat / com.project_aurora.emu.CmdEntryPoint $socket"
+                        "/system/bin/app_process -Xnoimage-dex2oat / com.project_aurora.emu.CmdEntryPoint $socket", 
+                        context as ViewModelStoreOwner
                     )
                 }
         } else {
-          return 
+           
         }
+        }.start()
     }
 
     fun stop() {

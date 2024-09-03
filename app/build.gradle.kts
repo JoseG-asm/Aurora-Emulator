@@ -12,7 +12,7 @@ android {
     
     defaultConfig {
         applicationId = "com.project_aurora.emu"
-        minSdk = 26
+        minSdk = 28
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"

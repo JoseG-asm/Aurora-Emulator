@@ -1,50 +1,50 @@
 {
   "allFiles": [
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.cpp",
-      "selection": {
-        "end": {
-          "column": 6,
-          "index": 586,
-          "line": 22
-        },
-        "start": {
-          "column": 6,
-          "index": 586,
-          "line": 22
-        }
-      }
-    },
-    {
       "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.h",
       "selection": {
         "end": {
-          "column": 30,
-          "index": 2360,
-          "line": 92
+          "column": 10,
+          "index": 2570,
+          "line": 97
         },
         "start": {
-          "column": 30,
-          "index": 2360,
-          "line": 92
+          "column": 10,
+          "index": 2570,
+          "line": 97
         }
       }
     },
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/build.gradle.kts",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.cpp",
       "selection": {
         "end": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 21,
+          "index": 303,
+          "line": 12
         },
         "start": {
-          "column": 0,
-          "index": 0,
-          "line": 0
+          "column": 21,
+          "index": 303,
+          "line": 12
+        }
+      }
+    },
+    {
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/.gitignore",
+      "selection": {
+        "end": {
+          "column": 14,
+          "index": 1477,
+          "line": 87
+        },
+        "start": {
+          "column": 14,
+          "index": 1477,
+          "line": 87
         }
       }
     }
   ],
-  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/vulkan.cpp"
+  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/.gitignore"
 }

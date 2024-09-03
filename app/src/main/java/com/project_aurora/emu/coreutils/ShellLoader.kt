@@ -4,14 +4,20 @@ import java.io.BufferedReader
 import java.io.DataOutputStream
 import java.io.InputStreamReader
 import android.util.Log
+import android.content.Context
+import com.project_aurora.emu.viewmodel.LogViewModel
+import androidx.lifecycle.ViewModelStoreOwner
+import androidx.lifecycle.ViewModelProvider
 
 class ShellLoader { 
     inner class Process(
         var name: String,
-        var cmd: String
+        var cmd: String,
+        var owner: ViewModelStoreOwner
     ) {
         private val standardOutput = StringBuilder()
         private val standardOutputError = StringBuilder()
+        private var log = ViewModelProvider(owner).get(LogViewModel::class.java)
         
         val executeProcess: () -> Unit = {
             executeShellProcess(cmd)
@@ -34,7 +40,8 @@ class ShellLoader {
                         var out: String?
                         while (stdout.readLine().also { out = it } != null) {
                             synchronized(standardOutput) {
-                                Log.e("ShellLoader", "stdout: $out")
+                                Log.w("Xserver output thread:", "$out \n")
+                                log.bindMessages("out: $out \n")
                                 standardOutput.append(out).append("\n")
                             }
                         }
@@ -46,11 +53,12 @@ class ShellLoader {
 
                 val stderrThread = Thread {
                     try {
-                        var s: String?
-                        while (stderr.readLine().also { s = it } != null) {
+                        var err: String?
+                        while (stderr.readLine().also { err = it } != null) {
                             synchronized(standardOutputError) {
-                                Log.e("ShellLoader", "stderr: $s")
-                                standardOutputError.append(s).append("\n")
+                                Log.e("Xserver err thread:", "$err \n")
+                                log.bindMessages("err: $err \n")
+                                standardOutputError.append(err).append("\n")
                             }
                         }
                     } catch (ignored: Exception) {
@@ -80,8 +88,8 @@ class ShellLoader {
     
     private var mProcessTree: MutableMap<String, Process> = mutableMapOf()
     
-    fun newProcess(name: String, cmd: String) {
-        mProcessTree[name] = Process(name, cmd)
+    fun newProcess(name: String, cmd: String, owner: ViewModelStoreOwner) {
+        mProcessTree[name] = Process(name, cmd, owner)
     }
     
     fun executeProcessByName(name: String) {

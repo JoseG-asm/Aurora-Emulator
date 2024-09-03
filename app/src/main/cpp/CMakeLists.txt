@@ -10,6 +10,8 @@ include_directories(${VULKAN_CXX_INCLUDE})
 
 
 add_library(compositor_wrapper SHARED
+            compositor/vulkan/vulkan.cpp
+            compositor/vulkan/vulkan.h
             native-lib.cpp
             )
 

@@ -26,6 +26,7 @@ class VulkanSurfaceView @JvmOverloads constructor(
     }
 
     override fun surfaceDestroyed(holder: SurfaceHolder) {
+        NativeCode().surfaceDestroyed()
     }
 
 }

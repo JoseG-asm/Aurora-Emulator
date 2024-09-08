@@ -10,4 +10,5 @@ class NativeCode {
    }
    
    external fun surfaceChanged(surface: Surface?, width: Int, height: Int)
+   external fun surfaceDestroyed()
 }

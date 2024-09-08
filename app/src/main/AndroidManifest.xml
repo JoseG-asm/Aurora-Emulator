@@ -77,7 +77,7 @@
 
         <activity
             android:theme="@style/Theme.Aurora.Base"
-            android:name=".vulkan.VulkanWrapperActivity"
+            android:name=".compositor.VulkanWrapperActivity"
             android:launchMode="singleTop"
             android:exported="true" />
 

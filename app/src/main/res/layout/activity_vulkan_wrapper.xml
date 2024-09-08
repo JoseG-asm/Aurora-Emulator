@@ -6,7 +6,7 @@
      android:layout_width="match_parent"
      android:id="@+id/coordinator">
 
-    <com.project_aurora.emu.vulkan.VulkanSurfaceView
+    <com.project_aurora.emu.compositor.VulkanSurfaceView
          android:layout_height="match_parent"
          android:layout_width="match_parent" />
 

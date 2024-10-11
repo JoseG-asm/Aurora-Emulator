@@ -1,12 +1,14 @@
 cmake_minimum_required(VERSION 3.10.2)
 
-project(WSI LANGUAGES CXX)
-
-
+project(COMPOSITOR LANGUAGES CXX)
 add_subdirectory(deps/vulkan-headers EXCLUDE_ALL)
+add_subdirectory(deps/libadrenotools)
+
+
 
 set(VULKAN_CXX_INCLUDE "deps/vulkan-headers/include")
-include_directories(${VULKAN_CXX_INCLUDE})
+set(ADRENO_TOOLS_CXX_INCLUDE "deps/libadrenotools/include")
+include_directories(${VULKAN_CXX_INCLUDE} ${ADRENO_TOOLS_CXX_INCLUDE})
 
 
 add_library(compositor_wrapper SHARED

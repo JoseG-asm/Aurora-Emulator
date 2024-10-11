@@ -10,19 +10,23 @@
 #include <sys/un.h>
 #include <unistd.h>
 #include <cstring>
+#include <dlfcn.h>
 #include <iostream>
 
 #include "co_hardware_buffers.h"
 
 
-
-namespace DriverHook {
+/** 
+ * Get funcs from system driver 
+ */ 
+namespace VulkanSystemDriver {
     typedef struct driver_module_t {
+        public:
         void *libvulkan;
         
         template <typename T>
-        static T get_instance_proc_addr(const char *name) {
-            T func = reinterpret_cast<T>(dlsym( libVulkan, name));
+        T get_instance_proc_addr(const char *name) {
+            T func = reinterpret_cast<T>(dlsym( libvulkan, name));
             if (func == nullptr) {
                 // not found handle some error
             }
@@ -30,8 +34,8 @@ namespace DriverHook {
             return func;
         }
     } driver_module_t;
-    
-    
+}    
+
 namespace Vulkan {
     
 class Compositor {
@@ -113,5 +117,4 @@ public:
     VkResult vkCreateDevice(VkPhysicalDevice physicalDevice, const VkDeviceCreateInfo* pCreateInfo, const VkAllocationCallbacks* pAllocator, VkDevice* pDevice);
     
     };
-}
 }

@@ -1,35 +1,35 @@
 {
   "allFiles": [
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/co_device.cpp",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/co_device.h",
       "selection": {
         "end": {
-          "column": 6,
-          "index": 2817,
-          "line": 88
+          "column": 32,
+          "index": 387,
+          "line": 19
         },
         "start": {
-          "column": 6,
-          "index": 2817,
-          "line": 88
+          "column": 32,
+          "index": 387,
+          "line": 19
         }
       }
     },
     {
-      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/co_device.h",
+      "file": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/native-lib.cpp",
       "selection": {
         "end": {
-          "column": 18,
-          "index": 274,
-          "line": 11
+          "column": 0,
+          "index": 0,
+          "line": 0
         },
         "start": {
-          "column": 18,
-          "index": 274,
-          "line": 11
+          "column": 0,
+          "index": 0,
+          "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/compositor/vulkan/co_device.h"
+  "selectedFile": "/data/data/com.itsaky.androidide/files/home/ProjectAurora/app/src/main/cpp/native-lib.cpp"
 }
